@@ -2,15 +2,15 @@
 import './App.css';
 import TextForm from './components/TextForm';
 import Navbar from './components/Navbar';
-import About from './components/About';
+// import About from './components/About';
 import { useState } from 'react';
 import Alert from './components/Alert';
-import {
-  Route,
-  Link,
-  Routes,
-  BrowserRouter as Router,
-} from "react-router-dom";
+// import {
+//   Route,
+//   Link,
+//   Routes,
+//   BrowserRouter as Router,
+// } from "react-router-dom";
 
 function App() {
 
@@ -52,22 +52,22 @@ function App() {
   }
   return (
     <>
-    <Router>
+    {/* <Router> */}
     <Navbar title = "TextUtils" text = "About Us" mode={mode} toogleMode={toogleMode}/>
     <Alert alert = {alert}/>
-    <div className="container">
+    {/* <div className="container">
     <Routes>
         <Route path="/" element={<TextForm heading = "LOGIN" mode = {mode} showAlert = {showAlert}/>} />
         <Route path="/about" element={<About />} />
-    </Routes>
+    </Routes> */}
     {/* <Navbar title = "textUtils2" /> */}
     {/* <Navbar /> */}
-    {/* <TextForm heading = "LOGIN" mode = {mode} showAlert = {showAlert}/> */}
-    </div>
-    </Router>
+    <TextForm heading = "LOGIN" mode = {mode} showAlert = {showAlert}/>
+    {/* </div>
+    </Router> */}
     </>
     
   );
 }
-
+ 
 export default App;
