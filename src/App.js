@@ -57,7 +57,7 @@ function App() {
     <Alert alert = {alert}/>
     <div className="container">
     <Routes>
-        <Route path="/" element={<TextForm heading = "LOGIN" mode = {mode} showAlert = {showAlert}/>} />
+        <Route path="/" element={<TextForm heading = "TextNest" mode = {mode} showAlert = {showAlert}/>} />
         <Route path="/about" element={<About />} />
     </Routes> 
     {/* <Navbar title = "textUtils2" />  */}
