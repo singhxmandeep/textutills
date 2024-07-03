@@ -80,7 +80,7 @@ export default function TextForm(props) {
         <div className="mb-3">
           <textarea className="form-control" value={text} onChange={handleOnChange} style={darkStyle} id="myBox" rows="8"></textarea>
         </div>
-        <button onClick={handleUpClick} className="btn btn-primary">
+        <button onClick={handleUpClick} className="btn btn-primary m-2">
           Convert TO UpperCase
         </button>
         <button onClick={handleLoClick} className="btn btn-primary m-2">

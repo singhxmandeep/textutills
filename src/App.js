@@ -36,7 +36,7 @@ function App() {
       showAlert(" Dark mode had been enabled","success")
       document.title = "TestUtils - Dark"
       // setInterval(() => {
-      //   document.title = "Install TextUtils"
+      //   document.title = "Install TextNest"
       // }, 2000);
       // setInterval(() => {
       //   document.title = "Install the app now"
@@ -52,7 +52,7 @@ function App() {
   return (
     <>
     <Router>
-    <Navbar title = "TextUtils" text = "About Us" mode={mode} toogleMode={toogleMode}/>
+    <Navbar title = "TextNest" text = "About Us" mode={mode} toogleMode={toogleMode}/>
     {/* <TextForm heading = "LOGIN" mode = {mode} showAlert = {showAlert}/> */}
     <Alert alert = {alert}/>
     <div className="container">
@@ -60,7 +60,7 @@ function App() {
         <Route path="/" element={<TextForm heading = "TextNest" mode = {mode} showAlert = {showAlert}/>} />
         <Route path="/about" element={<About />} />
     </Routes> 
-    {/* <Navbar title = "textUtils2" />  */}
+    {/* <Navbar title = "TextNest2" />  */}
     {/* <Navbar /> */}
      </div>
     </Router>
